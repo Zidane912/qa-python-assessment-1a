@@ -66,7 +66,6 @@ def one(input1, input2):
 
 
 def two(input):
-    input.split()
     return ""
 
 
@@ -92,11 +91,11 @@ def two(input):
 
 def three(arg1):
     if arg1 % 3 == 0 and arg1 % 5 == 0:
-        return "fizz"
+        return "fizzbuzz"
     elif arg1 % 5 == 0:
         return "buzz"
     elif arg1 % 3 == 0:
-        return "fizzbuzz"
+        return "fizz"
     elif arg1 % 3 != 3 and arg1 % 5 != 0:
         return "null"
 
@@ -124,12 +123,10 @@ def three(arg1):
 
 
 def four(arg1):
-    list_arg = list(arg1)
-    list_arg2 = list_arg.remove(" ")
-    for i in list_arg2:
-
-
-
+    list_arg = arg1.split()
+    for i in list_arg:
+        " ".join(i)
+        return sum(i)
 
     # <QUESTION 5>
 
@@ -179,11 +176,7 @@ def five(input):
 
 
 def six(input):
-    for i in range(input):
-        if i == "i" and (i + 1) == "e":
-            return "True"
-        elif "c" in input and :
-        
+    return ""
 
     # <QUESTION 7>
 
@@ -223,9 +216,7 @@ def seven(input):
 
 
 def eight(input):
-    for i in range(11):
-        
-        return ""
+    return ""
 
     # <QUESTION 9>
 
