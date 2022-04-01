@@ -35,7 +35,12 @@
 
 
 def one(input1, input2):
-    return ""
+    if len(input1) > len(input2):
+        return input1
+    elif len(input1) < len(input2):
+        return input2
+    elif len(input1) == len(input2):
+        return input1 + ' ' + input2
 
    # <QUESTION 2>
 
@@ -61,6 +66,7 @@ def one(input1, input2):
 
 
 def two(input):
+    input.split()
     return ""
 
 
@@ -85,7 +91,14 @@ def two(input):
 
 
 def three(arg1):
-    return ""
+    if arg1 % 3 == 0 and arg1 % 5 == 0:
+        return "fizz"
+    elif arg1 % 5 == 0:
+        return "buzz"
+    elif arg1 % 3 == 0:
+        return "fizzbuzz"
+    elif arg1 % 3 != 3 and arg1 % 5 != 0:
+        return "null"
 
     # <QUESTION 4>
 
@@ -111,7 +124,12 @@ def three(arg1):
 
 
 def four(arg1):
-    return ""
+    list_arg = list(arg1)
+    list_arg2 = list_arg.remove(" ")
+    for i in list_arg2:
+
+
+
 
     # <QUESTION 5>
 
@@ -161,7 +179,11 @@ def five(input):
 
 
 def six(input):
-    return ""
+    for i in range(input):
+        if i == "i" and (i + 1) == "e":
+            return "True"
+        elif "c" in input and :
+        
 
     # <QUESTION 7>
 
@@ -179,7 +201,10 @@ def six(input):
 
 
 def seven(input):
-    return ""
+    str = list(input.casefold())
+    for i in str:
+        if i == "a" or i == "e" or i == "i" or i == "o" or i == "u":
+            return str.count(i)
 
     # <QUESTION 8>
 
@@ -198,7 +223,9 @@ def seven(input):
 
 
 def eight(input):
-    return ""
+    for i in range(11):
+        
+        return ""
 
     # <QUESTION 9>
 
@@ -220,7 +247,10 @@ def eight(input):
 
 
 def nine(inputString, char):
-    return ""
+    x = range(list(inputString))
+    for i in x:
+        if char == i:
+            return x[i]
 
     # <QUESTION 10>
 
@@ -241,4 +271,8 @@ def nine(inputString, char):
 
 
 def ten(string, int, char):
-    return ""
+    for i in list(string):
+        if char[int] == i:
+            return True
+        else:
+            return False
